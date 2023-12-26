@@ -1,0 +1,10 @@
+﻿
+@model CodegraphiaTesting.Models.Employee;
+
+<form asp-action="Create" method="post">
+
+	<input asp-for="EmployeeName" type="text"/>
+	<input asp-for="EmployeeNumber" type="text" />
+	<input asp-for="Salary" type="number" />
+	<button type="submit">Add Employee</button>
+</form>

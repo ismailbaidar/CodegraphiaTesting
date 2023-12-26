@@ -1,0 +1,23 @@
+﻿
+@model List<CodegraphiaTesting.Models.Employee>;
+<table class="table">
+    <tr>
+        <td>#Employee Id</td>
+        <td>Employee Name</td>
+        <td>Employee Number</td>
+        <td>Employee Salary</td>
+
+
+    </tr>
+    @foreach(Employee employee in Model)
+    {
+        <tr>
+            <td>@employee.Id</td>
+            <td>@employee.EmployeeName</td>
+            <td>@employee.EmployeeNumber</td>
+            <td>@employee.Salary</td>
+
+
+        </tr>
+    }
+</table>

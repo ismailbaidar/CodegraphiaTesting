@@ -1,0 +1,24 @@
+﻿@model List<CodegraphiaTesting.Models.Department>;
+<a class="btn btn-primary" asp-action="Create">Add Department</a>
+<table class="table">
+    <tr>
+        <td>#Department Id</td>
+        <td>Department Name</td>
+        <td>Department Abbreviation</td>
+        <td>Actions</td>
+        
+
+
+
+    </tr>
+    @foreach(Department department in Model){
+        <tr>
+            <td>@department.DepartmentId</td>
+            <td>@department.DepartmentName</td>
+            <td>@department.DepartmentAbbr</td>
+            <td>
+                <a asp-action="Delete" class="btn btn-danger" asp-route-id="@department.DepartmentId">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
